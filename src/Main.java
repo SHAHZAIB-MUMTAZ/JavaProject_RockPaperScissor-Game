@@ -18,12 +18,13 @@ public class Main
     public static void main(String[] args)
     {
         Scanner selection = new Scanner(System.in); // Scanner class for user input.
-
+        
         // Declaring variables
         int user_pick;
         int computer_pick;
         char choice = 'Y';
-
+        
+        // Using While loop to let the user play as long as the user wants.
         while (choice == 'y' || choice =='Y') {
 
             // Getting User Input and Displaying it.
@@ -90,7 +91,8 @@ public class Main
             } else if (user_pick == 3 && computer_pick == 3) {
                 System.out.println("Game is draw.");
             }
-
+            
+            // Getting input from the user for While loop condition.
             System.out.print("Do you want to play again? (Y/N) ");
             choice = selection.next().charAt(0);
 
