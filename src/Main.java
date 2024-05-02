@@ -22,6 +22,9 @@ public class Main
         // Declaring variables
         int user_pick;
         int computer_pick;
+        char choice = 'Y';
+
+        while (choice == 'y' || choice =='Y') {
 
             // Getting User Input and Displaying it.
             System.out.println("Choose Any one of the following option: ");
@@ -87,5 +90,10 @@ public class Main
             } else if (user_pick == 3 && computer_pick == 3) {
                 System.out.println("Game is draw.");
             }
+
+            System.out.print("Do you want to play again? (Y/N) ");
+            choice = selection.next().charAt(0);
+
+        }
     }
 }
